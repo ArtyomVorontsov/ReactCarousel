@@ -59,11 +59,11 @@ You can see references in ./Carousel/Card/Card.jsx
 Every card component must have a card wrapper div with id attribute like this:
 
 	export const CustomCardComponent = (props) => {
-    		return(
+    	return(
         	<div /* Card wrapper */ id={props.id} >
-            		<div /* Card */>
+            	<div /* Card */>
 			/* Your HTML content */       
-            		</div>
+            	</div>
         	</div>
 	    )
 	}
