@@ -8,6 +8,18 @@ This is a  customisable and responsive  component which bring carousel functiona
 To try carousel component you need to have installed nodejs and download code from GitHub repo, then open it with IDE and run in terminal command npm install, npm will install all important packages.
 To start project on localhost:8080 you need to type npm start in terminal, to build use npm run build.
 
+1. Get code from GitHub repo.
+<img width="500" src="./readmeImages/steps/step1.jpg">
+
+2. Get code from GitHub repo.
+<img width="500" src="./readmeImages/steps/step2.jpg">
+
+3. Get code from GitHub repo.
+<img width="500" src="./readmeImages/steps/step3.jpg">
+
+4. Get code from GitHub repo.
+<img width="500" src="./readmeImages/steps/step4.jpg">
+
 ## Usage:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
 Component supports 4 predefined types of cards:
