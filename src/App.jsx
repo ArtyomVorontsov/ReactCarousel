@@ -18,7 +18,7 @@ const App = (props) => {
             isInfinite={false}
             paginatorOn={true}
             buttonsOn={true}
-            Card={"UserCard"}
+            Card={"PhotoCard"}
             elements={elementsRealPhotos}
             
             //cardWidth={window.innerWidth}

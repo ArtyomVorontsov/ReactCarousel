@@ -80,14 +80,14 @@ $primary: #9c14e65e;
 
 .photoCard{
     @include flexAlign(column, center, center);
-    width: 550px;
+    width: 500px;
     height: 400px;
     box-shadow: -5px 5px 20px  $primary;
     border-radius: 10px;
     overflow: hidden;
 
     img{
-        width: 550px;
+        width: 600px;
         
     }
 }

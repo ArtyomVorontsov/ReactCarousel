@@ -150,7 +150,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 550px;
+  width: 500px;
   height: 400px;
   -webkit-box-shadow: -5px 5px 20px #9c14e65e;
           box-shadow: -5px 5px 20px #9c14e65e;
@@ -159,7 +159,7 @@
 }
 
 .photoCard img {
-  width: 550px;
+  width: 600px;
 }
 
 @media (max-width: 375px) {
