@@ -28,36 +28,42 @@ Component supports 4 predefined types of cards:
 
 ## Component properties:
 
-1. isInfinite={true/false}
+- isInfinite={true/false}
 	Carousel can be infinite of not.
 
-2. paginatorOn={true/false}
+- paginatorOn={true/false}
 You can display or hide paginator.
 
-3. buttonsOn={true/false}
+- buttonsOn={true/false}
 You can display or hide carousel buttons.
 
-4. Card={"PhotoCard" / “UserCard” / “FullScreenCard” / “FullScreenCardTriple”/ <YourCustomCard/>} 
+- Card={"PhotoCard" / “UserCard” / “FullScreenCard” / “FullScreenCardTriple”/ <YourCustomCard/>} 
 	You can choose type of card or pass your custom card component.
 
-5. elements={ elementsRealPhotos / elements / Your API data }
+- elements={ elementsRealPhotos / elements / Your API data }
 You can choose API source for carousel, carousel component will map through all API data and render all Cards.
 
-dev properties
-6. cardWidth={window.innerWidth}
-#### If you build custom card component you should pass your custom card wrapper width to carousel component.
+**Properties for custom card component**
+- cardWidth={window.innerWidth}
+>If you use custom card component you should pass your custom card wrapper width to carousel component.
 
 ## Work with predefined components:
 
 All predefined cards support picture attribute, so if you want to use pictures in carousel, just create javascript object something like this: 
-let PhotosAPI = [{ picture: photo1 }, { picture: photo2 }, { picture: photo3 }] 
-And pass it to carousel like this:  <Carousell  Card={“FullScreenCardTitle”} elements={PhotosAPI}  />
+	let PhotosAPI = [{ picture: photo1 }, { picture: photo2 }, { picture: photo3 }] 
+	
+And pass it to carousel like this: 
+	<Carousell  Card={“FullScreenCardTitle”} elements={PhotosAPI}  />
 Also you can modify card component and add any of HTML content inside.
 
-For this go to ./Carousel/Card/Card.jsx
-Choose component which you wan’t to modify, and modify it. 
-If you added new attributes to component, you should go inside Caroulsel.jsx and add your new attributes inside card component which was updated.  
+For this go to:
+	./Carousel/Card/Card.jsx
 	
+Choose component which you wan’t to modify, and modify it:
+	//Here will be photo of modified component 
+	
+If you added new attributes to component, you should go inside Caroulsel.jsx and add your new attributes inside card component which was updated.  
+	//Here will be photo of modified component 
 
 
 
@@ -75,14 +81,24 @@ Every card component must have a card wrapper div with id attribute like this:
         	</div>
 	    )
 	}
+	
+1) Create your component.
 
+2) After your component was created you can pass it to carousel, like this:
+```
+<Carousell  Card={<YourComponent/>}  />
+```
+3) Don’t forget add a cardWidth attribute, like here:
+```
+<Carousell cardWidth={500}  Card={<YourComponent/>}  />
+```
+>cardWidth attribute should contain your card wrapper width
 
-2) After your component was created you can pass it to <Carousell  Card={<YourComponent/>}  />
-
-3) Don’t forget add a cardWidth attribute like this <Carousell cardWidth={500}  Card={<YourComponent/>}  />
-(cardWidth attribute should contain your card wrapper width)
-
-4) Then you should add data for your card <Carousell  Card={<YourComponent/>} elements={YourData}  />, reference for data structure you can find in  ./CarouselBundle/FakeAPI/FakeAPI.js
+4) Then you should add data for your card: 
+```
+<Carousell  Card={<YourComponent/>} elements={YourData}  />
+```
+Reference for data structure you can find in  ./CarouselBundle/FakeAPI/FakeAPI.js
 	
 5) Next step will be connect your data for component with component itself. You should go inside carousel component and add to Card your props, after that your carousel should work correctly.
 
