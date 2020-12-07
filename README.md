@@ -12,16 +12,16 @@ To start project on localhost:8080 you need to type npm start in terminal, to bu
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
 Component supports 4 predefined types of cards:
 
-- **PhotoCard - Used for images (Width of card: 600px).**
+- **PhotoCard** - Used for images (Width of card: 600px).
 <img width="500" src="./readmeImages/cardsTypes/PhotoCard.jpg">
 	
-- **UserCard - Used for user information display. (Width of card: 400px).**
+- **UserCard** - Used for user information display. (Width of card: 400px).
 <img width="500" src="./readmeImages/cardsTypes/UserCard.jpg">
 	
-- **FullScreenCard - Card which use full height and width of user browser window (Width of card: window.innerWidth).**
+- **FullScreenCard** - Card which use full height and width of user browser window (Width of card: window.innerWidth).
 <img width="500" src="./readmeImages/cardsTypes/FullScreen.jpg">
 	
-- **FullScreenCardTriple  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.**
+- **FullScreenCardTriple**  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.
 <img width="500" src="./readmeImages/cardsTypes/FullScreenCardTriple.jpg">
 
 ## Component properties:
@@ -36,7 +36,7 @@ You can display or hide paginator.
 You can display or hide carousel buttons.
 
 - Card={"PhotoCard" / “UserCard” / “FullScreenCard” / “FullScreenCardTriple”/ <YourCustomCard/>} 
-	You can choose type of card or pass your custom card component.
+You can choose type of card or pass your custom card component.
 
 - elements={ elementsRealPhotos / elements / Your API data }
 You can choose API source for carousel, carousel component will map through all API data and render all Cards.
