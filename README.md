@@ -71,8 +71,10 @@ And pass it to carousel like this:
 
 **Also you can modify card component and add any of HTML content inside.**
 
-For this go to: ./Carousel/Card/Card.jsx
-	
+For this go to: 
+```
+./Carousel/Card/Card.jsx
+```
 Choose component which you wan’t to modify, and modify it:
 	//Here will be photo of modified component 
 	
@@ -112,8 +114,10 @@ Every card component must have a card wrapper div with id attribute like this:
 ```
 <Carousell  Card={<YourComponent/>} elements={YourData}  />
 ```
-Reference for data structure you can find in  ./CarouselBundle/FakeAPI/FakeAPI.js
-	
+Reference for data structure you can find in:  
+```
+./CarouselBundle/FakeAPI/FakeAPI.js
+```
 5) Next step will be connect your data for component with component itself. You should go inside carousel component and add to Card your props, after that your carousel should work correctly.
 
 
