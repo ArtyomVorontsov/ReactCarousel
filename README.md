@@ -2,7 +2,7 @@
 
 
 ## Description:
-This is a  customisable and responsive  component which bring carousel functionality to your react project. 
+This is a customisable and responsive component which supports touch devices and bring carousel functionality to your react project. 
 
 ## React Carousel Component SandBox
 To try carousel component you need to have installed nodejs and download code from GitHub repo, then open it with IDE and run in terminal command npm install, npm will install all important packages.
@@ -21,7 +21,7 @@ To start project on localhost:8080 you need to type npm start in terminal, to bu
 <img width="500" src="./readmeImages/steps/step4.png">
 >Try to change component properties to see all carousel capabilities.
 
-## Usage:
+## Type of cards:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
 Component supports 4 predefined types of cards:
 
@@ -40,7 +40,7 @@ Component supports 4 predefined types of cards:
 ## Component properties:
 
 - isInfinite={true/false}
-	Carousel can be infinite of not.
+Carousel can be infinite of not.
 
 - paginatorOn={true/false}
 You can display or hide paginator.
@@ -54,21 +54,24 @@ You can choose type of card or pass your custom card component.
 - elements={ elementsRealPhotos / elements / Your API data }
 You can choose API source for carousel, carousel component will map through all API data and render all Cards.
 
-**Properties for custom card component**
+**Properties only for custom card component**
 - cardWidth={window.innerWidth}
 >If you use custom card component you should pass your custom card wrapper width to carousel component.
 
 ## Work with predefined components:
 
 All predefined cards support picture attribute, so if you want to use pictures in carousel, just create javascript object something like this: 
-	let PhotosAPI = [{ picture: photo1 }, { picture: photo2 }, { picture: photo3 }] 
-	
+```
+let PhotosAPI = [{ picture: photo1 }, { picture: photo2 }, { picture: photo3 }] 
+```
 And pass it to carousel like this: 
-	<Carousell  Card={“FullScreenCardTitle”} elements={PhotosAPI}  />
-Also you can modify card component and add any of HTML content inside.
+```
+<Carousell  Card={“FullScreenCardTitle”} elements={PhotosAPI}  />
+```
 
-For this go to:
-	./Carousel/Card/Card.jsx
+**Also you can modify card component and add any of HTML content inside.**
+
+For this go to: ./Carousel/Card/Card.jsx
 	
 Choose component which you wan’t to modify, and modify it:
 	//Here will be photo of modified component 
