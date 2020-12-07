@@ -11,14 +11,15 @@ To start project on localhost:8080 you need to type npm start in terminal, to bu
 1. Get code from GitHub repo.
 <img width="500" src="./readmeImages/steps/step1.png">
 
-2. Get code from GitHub repo.
+2. Code will be downloaded to your machine.
 <img width="500" src="./readmeImages/steps/step2.png">
 
-3. Get code from GitHub repo.
+3. Run npm install to get all necessary node pakages.
 <img width="500" src="./readmeImages/steps/step3.png">
 
-4. Get code from GitHub repo.
+4. Component sandbox will be in ./ReactCarousel/src/App.jsx
 <img width="500" src="./readmeImages/steps/step4.png">
+>Try to change component properties to see all carousel capabilities.
 
 ## Usage:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
@@ -115,7 +116,7 @@ Reference for data structure you can find in  ./CarouselBundle/FakeAPI/FakeAPI.j
 
 ## Prohibitions and recommendations:
 
-- Don’t use FullScreenCardTriple with isInfinite={false} only with isInfinite={true}.
-- Use images which is compressed with squoosh.app or tinypng.com recommended images extensions is jpg or webp.
+- Don’t use **FullScreenCardTriple** with **isInfinite={false}** only with isInfinite={true}.
+- Use images which is compressed with [squoosh.app](https://www.squoosh.app) or [tinypng.com](https://www.tinypng.com) recommended images extensions is jpg or webp.
 
 
