@@ -21,7 +21,7 @@ Component supports 4 predefined types of cards:
 <img width="500" src="./readmeImages/cardsTypes/UserCard.jpg">
 	
 3. FullScreenCard - Card which use full height and width of user browser window (Width of card: window.innerWidth).
-<img width="500" src="./readmeImages/cardsTypes/FullScreenCard.jpg">
+<img width="500" src="./readmeImages/cardsTypes/FullScreen.jpg">
 	
 4. FullScreenCardTriple  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.
 <img width="500" src="./readmeImages/cardsTypes/FullScreenCardTriple.jpg">
