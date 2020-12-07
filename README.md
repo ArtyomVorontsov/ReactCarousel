@@ -9,16 +9,16 @@ To try carousel component you need to have installed nodejs and download code fr
 To start project on localhost:8080 you need to type npm start in terminal, to build use npm run build.
 
 1. Get code from GitHub repo.
-<img width="500" src="./readmeImages/steps/step1.jpg">
+<img width="500" src="./readmeImages/steps/step1.png">
 
 2. Get code from GitHub repo.
-<img width="500" src="./readmeImages/steps/step2.jpg">
+<img width="500" src="./readmeImages/steps/step2.png">
 
 3. Get code from GitHub repo.
-<img width="500" src="./readmeImages/steps/step3.jpg">
+<img width="500" src="./readmeImages/steps/step3.png">
 
 4. Get code from GitHub repo.
-<img width="500" src="./readmeImages/steps/step4.jpg">
+<img width="500" src="./readmeImages/steps/step4.png">
 
 ## Usage:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
