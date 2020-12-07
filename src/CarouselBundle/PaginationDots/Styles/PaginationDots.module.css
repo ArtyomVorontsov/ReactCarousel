@@ -1,0 +1,54 @@
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 20px;
+}
+
+.paginatorDotWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.paginatorDotWrapper:hover .paginatorDot {
+  background-color: #ac78dd;
+}
+
+.paginatorDot {
+  width: 10px;
+  height: 10px;
+  background-color: #bd9ddb;
+  border-radius: 50%;
+}
+
+.paginatorDotSelected {
+  width: 10px;
+  height: 10px;
+  background-color: #a36ed4;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=PaginationDots.module.css.map */

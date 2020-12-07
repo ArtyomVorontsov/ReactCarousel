@@ -1,0 +1,12 @@
+@mixin flexAlign($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+.app{
+    @include flexAlign(row, flex-start, center);
+    width: 100vw;
+    height: 200vh;
+}

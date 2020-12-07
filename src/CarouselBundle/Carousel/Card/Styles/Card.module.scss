@@ -1,0 +1,132 @@
+$primary: #9c14e65e;
+
+@mixin flexAlign($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+//User card styles
+
+.userCardWrapper{
+    @include flexAlign(column, center, center);
+    position: absolute;
+    width: 480px;
+    height: 400px;
+    left: 0;
+    transition: left 0.3s ease-in;
+}
+
+.userCard{
+    @include flexAlign(column, center, center);
+    width: 300px;
+    height: 400px;
+    box-shadow: -5px 5px 20px  $primary;
+    border-radius: 10px;
+}
+
+.userpicWrapper{
+    @include flexAlign(column, center, center);
+    width: 100%;
+    flex-grow: 1;
+
+    img{
+        user-select: none;
+    }
+   
+    .userpicSkeleton{
+        width: 200px;
+        height: 200px;
+        box-shadow: -1px 1px 10px  rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+       
+    }
+}
+
+
+.personalInfoWrapper{
+    @include flexAlign(column, center, center);
+    flex-grow: 1.5;
+    width: 100%;
+
+    .usernameSkeleton{
+        margin: 8px;
+        width: 60%;
+        height: 30px;
+        box-shadow: -1px 1px 10px  rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .personalInfoSkeleton{
+        margin: 8px;
+        width: 50%;
+        height: 30px;
+        box-shadow: -1px 1px 10px  rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+}
+
+//Photo card styles
+.photoCardWrapper{
+    @include flexAlign(column, center, center);
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 0;
+    transition: left 0.4s ease-in;
+}
+
+.photoCard{
+    @include flexAlign(column, center, center);
+    width: 550px;
+    height: 400px;
+    box-shadow: -5px 5px 20px  $primary;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img{
+        width: 550px;
+        
+    }
+}
+
+@media (max-width: 375px){
+    .photoCard{
+        @include flexAlign(column, center, center);
+        width: 340px;
+        height: 400px;
+        box-shadow: -5px 5px 20px  $primary;
+        border-radius: 10px;
+
+        img{
+            user-select: none;
+        }
+    }
+}
+
+
+//full screen card
+
+.fullScreenCardWrapper{
+    @include flexAlign(column, center, center);
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+}
+
+.fullScreenCard{
+    @include flexAlign(column, center, center);
+    //overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+
+    img{
+        user-select: none;
+    }
+}
