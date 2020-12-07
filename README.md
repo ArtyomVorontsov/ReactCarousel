@@ -13,10 +13,18 @@ To start project on localhost:8080 you need to type npm start in terminal, to bu
 ## Usage:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
 Component supports 4 predefined types of cards:
-	1. PhotoCard - Used for images (Width of card: 600px).
-	2. UserCard - Used for user information display. (Width of card: 400px).
-	3. FullScreenCard - Card which use full height and width of user browser window (Width of card: window.innerWidth).
-	4. FullScreenCardTriple  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.
+
+1. PhotoCard - Used for images (Width of card: 600px).
+<img width="500" src="./readmeImages/cardsTypes/PhotoCard.jpg">
+	
+2. UserCard - Used for user information display. (Width of card: 400px).
+<img width="500" src="./readmeImages/cardsTypes/UserCard.jpg">
+	
+3. FullScreenCard - Card which use full height and width of user browser window (Width of card: window.innerWidth).
+<img width="500" src="./readmeImages/cardsTypes/FullScreenCard.jpg">
+	
+4. FullScreenCardTriple  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.
+<img width="500" src="./readmeImages/cardsTypes/FullScreenCardTriple.jpg">
 
 ## Component properties:
 
