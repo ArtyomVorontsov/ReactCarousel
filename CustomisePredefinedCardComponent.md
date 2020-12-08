@@ -8,6 +8,11 @@ To start let’s clone carousel from GitHub repo.
 
 Great! Now carousel appear within our project folder, we can enter inside folder ReactCarousel and extract CarouselBundle to our components folder, within CarouselBundle we have all necessary files for our carousel component. The remaining things we can delete because it contains files for carousel sandbox.
 
+<img width="500" src="./readmeImages/tutorial/afterCloning.png">
+<img width="500" src="./readmeImages/tutorial/CarouselComponent.png">
+
+
+
 Now we can use <Carousel/> component.
 
 In our case we insert carousel component directly to the homepage of this site.
