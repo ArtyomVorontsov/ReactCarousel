@@ -68,19 +68,23 @@ After all these steps, everything should start working!
 We can start styling the updated PhotoCard.
 
 We go to **Card.module.scss** and look for the photoCard class and inside it we can change almost everything except what is marked in red.
+
 <img width="500" src="./readmeImages/tutorial/cardStylesBefore.png">
 
 Important! Do not change photoCardWrapper, userCardWrapper, personalInfoWrapper, fullScreenCardWrapper in this file
 this will break the carousel.
 
 And my photoCard class looks like this:
+
 <img width="500" src="./readmeImages/tutorial/Card%20styling.png">
 
 
 And the carousel looks like this on desktop:
+
 <img width="500" src="./readmeImages/tutorial/pc%20result.png">
 
 On mobile:
+
 <img width="500" src="./readmeImages/tutorial/phone%20result.png">
 
 However, we can also change the colors of the paginator to our corporate color, go to the paginator and then change everything in this way:
