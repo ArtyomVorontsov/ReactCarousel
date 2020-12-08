@@ -19,7 +19,7 @@ In our case we insert carousel component directly to the homepage of this site.
 
 ## Choosing the Card type and passing additional parameters to attributes.
 
-For our purpose, an average PhotoCard 600px wide is fine, so we will choose it. We pass all the parameters which we need to the attributes and import the test data into the component.
+For our purpose, an average PhotoCard 600px wide is fine, so we will choose it. We pass all the parameters which we need to the attributes and import the test data **{elements}** from **./FakeAPI/FakeAPI.js** into the component.
 
 <img width="500" src="./readmeImages/tutorial/addingTestAttributes.png">
 
