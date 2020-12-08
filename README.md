@@ -131,5 +131,5 @@ Reference for data structure you can find in:
 
 - Don’t use **FullScreenCardTriple** with **isInfinite={false}** only with isInfinite={true}.
 - Use images which is compressed with [squoosh.app](https://www.squoosh.app) or [tinypng.com](https://www.tinypng.com) recommended images extensions is jpg or webp.
-
+- Read tutorial about how to [customise predefined card component.](https://github.com/ArtyomVorontsov/ReactCarousel/blob/master/CustomisePredefinedCardComponent.md) 
 
