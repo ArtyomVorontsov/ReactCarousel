@@ -11,7 +11,7 @@ Great! Now carousel appear within our project folder.
 <img width="500" src="./readmeImages/tutorial/afterCloning.png">
 
 We can enter inside folder ReactCarousel and extract CarouselBundle to our components folder, within CarouselBundle we have all necessary files for our carousel component. The remaining things we can delete because it contains files for carousel sandbox.
-Now we can use /<Carousel/> component.
+Now we can use < Carousel /> component.
 
 <img width="500" src="./readmeImages/tutorial/CarouselComponent.png">
 
