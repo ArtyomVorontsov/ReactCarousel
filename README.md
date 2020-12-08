@@ -78,13 +78,15 @@ For this go to:
 ```
 ./Carousel/Card/Card.jsx
 ```
-Choose component which you wan’t to modify, and modify it:
+Choose component which you wan’t to modify, and modify it for example like this:
 
 <img width="500" src="./readmeImages/tutorial/customisedComponent.png">
 	
 If you added new attributes to component, you should go inside Caroulsel.jsx and add your new attributes inside card component which was updated.  
 <img width="500" src="./readmeImages/tutorial/attributesToCard.png">
 
+
+> For a better understanding of how to modify a predefined card component, I recommend reading this: [Customise predefined card component.](https://github.com/ArtyomVorontsov/ReactCarousel/blob/master/CustomisePredefinedCardComponent.md)
 
 
 ## Creating custom card component:
