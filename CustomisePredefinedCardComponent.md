@@ -136,7 +136,7 @@ We go to **Card.module.scss** and look for the photoCard class and inside it we 
 **Important! Do not change photoCardWrapper, userCardWrapper, personalInfoWrapper, fullScreenCardWrapper in this file
 this will break the carousel.**
 
-And my photoCard class looks like this:
+And my photoCard class after styling looks like this:
 
 <img width="500" src="./readmeImages/tutorial/Card%20styling.png">
 
