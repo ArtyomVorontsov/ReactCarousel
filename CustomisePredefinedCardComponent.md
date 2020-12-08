@@ -50,11 +50,49 @@ Go to the **Card.jsx** file, find the required Card type and change it, for exam
 
 <img width="500" src="./readmeImages/tutorial/customisedComponent.png">
 
+````
+export const PhotoCard = (props) => {
+    return (
+        <div id={props.id} className={classes.photoCardWrapper}>
+            <div className={classes.photoCard}>
+                <div className={classes.textWrapper}>
+                    <h2 className={classes.heading}>{props.heading}</h2>
+                    <p className={classes.text}>{props.text}</p>
+                    <a className={classes.link} href={props.link}>Get a job!</a>
+                </div>
+                <img draggable="false" src={props.backgroundImage} alt="" />
+            </div>
+        </div>
+    )
+}
+````
+
 **Important! Change something only inside the wrapper component! Also, you cannot remove the id attribute, it will break the carousel.**
 
 ## Now let's create a test data array that will display the card component and pass this array to the carousel.
 
 <img width="500" src="./readmeImages/tutorial/data.png">
+
+Data example:
+````
+let sliderData = [
+  {heading: "We are hiring managers" , 
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." , 
+  link: "https://cat.com/work/manager",
+  backgroundImage: managerPhoto},
+
+  {heading: "We are hiring warehouse workers" , 
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." , 
+  link: "https://cat.com/work/warehouse",
+  backgroundImage: warehousePhoto},
+
+  {heading: "We are hiring accountants" , 
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." , 
+  link: "https://cat.com/work/accountant",
+  backgroundImage: accountantPhoto},
+]
+````
+
 <img width="500" src="./readmeImages/tutorial/addCustomData.png">
 
 We pass the array of our data to the elements parameter, but unfortunately nothing will work for now, we need to take a little ride in the carousel ...
@@ -62,6 +100,29 @@ We pass the array of our data to the elements parameter, but unfortunately nothi
 And so now we need to connect the data to the map function inside the carousel, go inside the component, find the PhotoCard component and add new attributes there that the Card will accept, you can also remove the picture attribute if you do not use it, but do not delete the key, id and meta attributes.
 
 <img width="500" src="./readmeImages/tutorial/attributesToCard.png">
+
+Updated switch statement:
+````
+switch (Card) {
+                case "PhotoCard":
+                    return <PhotoCard meta={index} id={index} key={index} 
+                    heading={element.heading} link={element.link} text={element.text} 
+                    backgroundImage={element.backgroundImage} />
+
+                case "UserCard":
+                    return <UserCard meta={index} id={index} key={index} picture={element.picture} />
+
+                case "FullScreenCard":
+                    return <FullScreenCard meta={index} id={index} key={index} picture={element.picture} />
+
+                case "FullScreenCardTriple":
+                    return <FullScreenCard meta={index} id={index} key={index} picture={element.picture} />
+
+                default:
+                    //Add some additional props for custom card
+                    return <Card id={index} key={index}  />
+            }
+````
 
 
 After all these steps, everything should start working!
