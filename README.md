@@ -131,7 +131,7 @@ Reference for data structure you can find in:
 - Paginator
 - Mouse swipes
 - Touch screen swipes
-- Selection with tab and scroll it by left arrow button and right arrow button. (press tab once and push left arrow button or right arrow button)
+- Selection carousel with tab and scroll it by left arrow button and right arrow button. (press tab once and push left arrow button or right arrow button)
 
 ## Prohibitions and recommendations:
 
