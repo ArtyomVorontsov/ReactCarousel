@@ -224,5 +224,6 @@ However, we can also change the colors of the paginator to our corporate color, 
 <img width="500" src="./readmeImages/tutorial/paginatorStyling.png">
 
 
-Well that's it, we made a custom PhotoCard component and added it to our project.
-<img width="500" src="./readmeImages/tutorial/pc%20result.png">
+### Well that's it, we made a custom PhotoCard component and added it to our project. 
+
+<img width="800" src="./readmeImages/tutorial/pc%20result.png">
