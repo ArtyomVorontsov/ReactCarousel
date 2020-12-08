@@ -48,36 +48,45 @@ Our card component currently has default styles and html, but we can change that
 
 Go to the Card.jsx file, find the required Card type and change it, for example like this:
 
-##Changed component image
+<img width="500" src="./readmeImages/tutorial/customisedComponent.png">
 
-Important! Change something only inside the wrapper component! Also, you cannot remove the id attribute, it will break the carousel.
+**Important! Change something only inside the wrapper component! Also, you cannot remove the id attribute, it will break the carousel.**
 
 Now let's create a test data array that will display the card component and pass this array to the carousel.
-##illustration about passing elements
-## Passing elements image
+
+<img width="500" src="./readmeImages/tutorial/data.png">
+<img width="500" src="./readmeImages/tutorial/addCustomData.png">
 
 We pass the array of our data to the elements parameter, but unfortunately nothing will work for now, we need to take a little ride in the carousel ...
 
 And so now we need to connect the data to the map function inside the carousel, go inside the component, find the PhotoCard component and add new attributes there that the Card will accept, you can also remove the picture attribute if you do not use it, but do not delete the key, id and meta attributes.
 
+<img width="500" src="./readmeImages/tutorial/attributesToCard.png">
+
+
 After all these steps, everything should start working!
 We can start styling the updated PhotoCard.
 
-We go to Card.module.scss and look for the photoCard class and inside it we can change almost everything except what is marked in red.
+We go to **Card.module.scss** and look for the photoCard class and inside it we can change almost everything except what is marked in red.
+<img width="500" src="./readmeImages/tutorial/cardStylesBefore.png">
 
 Important! Do not change photoCardWrapper, userCardWrapper, personalInfoWrapper, fullScreenCardWrapper in this file
 this will break the carousel.
 
 And my photoCard class looks like this:
-##photo card class image scss
+<img width="500" src="./readmeImages/tutorial/Card%20styling.png">
 
-And the carousel looks like this:
-##slider carousel
+
+And the carousel looks like this on desktop:
+<img width="500" src="./readmeImages/tutorial/pc%20result.png">
+
+On mobile:
+<img width="500" src="./readmeImages/tutorial/phone%20result.png">
 
 However, we can also change the colors of the paginator to our corporate color, go to the paginator and then change everything in this way:
 
-The first color is the base color.
-The second color is the hover color.
-The third color is the color of the current page.
+<img width="500" src="./readmeImages/tutorial/paginatorStyling.png">
+
 
 Well that's it, we made a custom PhotoCard component and added it to our project.
+<img width="500" src="./readmeImages/tutorial/pc%20result.png">
