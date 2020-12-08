@@ -1,5 +1,5 @@
 ## Customise predefined card component.
-
+<img width="500" src="./readmeImages/tutorial/start.png">
 Imagine that a large company wants to place a carousel on the homepage, carousel must contain a content which will tell about new vacancies from company. And we can implement it easy and fast with our React Carousel Component.
 
 To start let’s clone carousel from GitHub repo.
