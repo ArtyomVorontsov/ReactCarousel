@@ -93,12 +93,43 @@ And my photoCard class looks like this:
     @include flexAlign(column, center, center);
     width: 500px;
     height: 400px;
-    box-shadow: -5px 5px 20px  $primary;
+    box-shadow: -5px 5px 20px rgb(255, 203, 8);
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    background-color: black;
+    opacity: 1;
+
+    .textWrapper{
+        @include flexAlign(column, start, space-around);
+        z-index: 2;
+        padding-left: 40px;
+    }
+
+    .heading{
+        color: white;
+       
+    }
+
+    .text{
+        color: white;
+        width: 70%;
+    }
+    
+    .link{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        border: solid rgb(255, 203, 8);
+        padding: 10px 20px;
+    }
 
     img{
+        position: absolute;
+        z-index: 1;
         width: 600px;
+        opacity: 0.5;
+        background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.24));
     }
 }
 
@@ -107,7 +138,7 @@ And my photoCard class looks like this:
         @include flexAlign(column, center, center);
         width: 340px;
         height: 400px;
-        box-shadow: -5px 5px 20px  $primary;
+        box-shadow: -5px 5px 20px  rgb(255, 203, 8);
         border-radius: 10px;
 
         img{
