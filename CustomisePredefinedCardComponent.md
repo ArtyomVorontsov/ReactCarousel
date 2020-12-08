@@ -85,7 +85,7 @@ And the carousel looks like this on desktop:
 
 On mobile:
 
-<img width="500" src="./readmeImages/tutorial/phone%20result.png">
+<img height="600" src="./readmeImages/tutorial/phone%20result.png">
 
 However, we can also change the colors of the paginator to our corporate color, go to the paginator and then change everything in this way:
 
