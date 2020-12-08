@@ -37,7 +37,7 @@ Component supports 4 predefined types of cards:
 - **FullScreenCardTriple**  - Card which takes 1/3 of user screen, so you can use it for display three cards at the same time.
 <img width="500" src="./readmeImages/cardsTypes/FullScreenCardTriple.jpg">
 
-## Component properties:
+## Component attributes:
 
 - isInfinite={true/false}
 Carousel can be infinite of not.
@@ -52,8 +52,10 @@ You can display or hide carousel buttons.
 You can choose type of card or pass your custom card component.
 
 - elements={ elementsRealPhotos / elements / Your API data }
-> {elementsRealPhotos} and {elements} this is test api from **"./CarouselBundle/FakeAPI/FakeAPI"** 
-You can choose API source for carousel, carousel component will map through all API data and render all Cards.
+
+> {elementsRealPhotos} and {elements} this is arrays from **"./CarouselBundle/FakeAPI/FakeAPI"** they contain demonstration data.
+
+You can choose API source for carousel via elements attribute, carousel component will map through all API data and render all Cards.
 
 **Properties only for custom card component**
 - cardWidth={window.innerWidth}
@@ -77,10 +79,11 @@ For this go to:
 ./Carousel/Card/Card.jsx
 ```
 Choose component which you wan’t to modify, and modify it:
-	//Here will be photo of modified component 
+
+<img width="500" src="./readmeImages/tutorial/customisedComponent.png">
 	
 If you added new attributes to component, you should go inside Caroulsel.jsx and add your new attributes inside card component which was updated.  
-	//Here will be photo of modified component 
+<img width="500" src="./readmeImages/tutorial/attributesToCard.png">
 
 
 
@@ -109,7 +112,7 @@ Every card component must have a card wrapper div with id attribute like this:
 ```
 <Carousell cardWidth={500}  Card={<YourComponent/>}  />
 ```
->cardWidth attribute should contain your card wrapper width
+> CardWidth attribute should contain your card wrapper width
 
 4) Then you should add data for your card: 
 ```
