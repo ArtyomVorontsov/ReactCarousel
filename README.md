@@ -19,6 +19,7 @@ To start project on localhost:8080 you need to type **npm start** in terminal, t
 
 4. Component sandbox will be in **./ReactCarousel/src/App.jsx**, run **npm start** to try carousel on **localhost:8080**
 <img width="500" src="./readmeImages/steps/step4.png">
+
 > Try to change component properties to see all carousel capabilities.
 
 ## Type of cards:
