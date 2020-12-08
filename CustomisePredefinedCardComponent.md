@@ -3,7 +3,7 @@
 Imagine that a large company wants to place a carousel on the homepage, carousel must contain a content which will tell about new vacancies from company. And we can implement it easy and fast with our React Carousel Component.
 
 To start let’s clone carousel from GitHub repo.
-#Photo of cloning
+<img width="500" src="./readmeImages/tutorial/cloning.png">
 
 Great! Now carousel appear within our project folder, we can enter inside folder ReactCarousel and extract CarouselBundle to our components folder, within CarouselBundle we have all necessary files for our carousel component. The remaining things we can delete because it contains files for carousel sandbox.
 
