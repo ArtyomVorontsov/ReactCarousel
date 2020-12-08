@@ -119,7 +119,7 @@ Every card component must have a card wrapper div with id attribute like this:
 
 4) Then you should add data for your card: 
 ```
-<Carousell  Card={<YourComponent/>} elements={YourData}  />
+<Carousell cardWidth={500}  Card={<YourComponent/>} elements={YourData}  />
 ```
 Reference for data structure you can find in:  
 ```
