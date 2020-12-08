@@ -126,6 +126,12 @@ Reference for data structure you can find in:
 ```
 5) Next step will be connect your data for component with component itself. You should go inside carousel component and add to Card your props, after that your carousel should work correctly.
 
+## Carousel support navigation with:
+- Buttons
+- Paginator
+- Mouse swipes
+- Touch screen swipes
+- Selection with tab and scroll it by left arrow button and right arrow button. (press tab once and push left arrow button or right arrow button)
 
 ## Prohibitions and recommendations:
 
