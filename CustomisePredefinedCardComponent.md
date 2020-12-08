@@ -1,6 +1,6 @@
 ## Customise predefined card component.
 
-A large company wants to place a carousel on the homepage, carousel must contain a content which will tell about new vacancies from company. And we can implement it easy and fast with our React Carousel Component.
+Imagine that a large company wants to place a carousel on the homepage, carousel must contain a content which will tell about new vacancies from company. And we can implement it easy and fast with our React Carousel Component.
 
 To start let’s clone carousel from GitHub repo.
 #Photo of cloning
@@ -23,9 +23,9 @@ In this case, we will use the wrapper, but changing the height via Carousel.modu
 
 Now our component works correctly, but it doesn't show exactly what we need, let's fix it.
 
-Card customisation.
+## Card customisation.
 
-Our card component currently has default styles and internals, but we can change that.
+Our card component currently has default styles and html, but we can change that.
 
 Go to the Card.jsx file, find the required Card type and change it, for example like this:
 
@@ -34,8 +34,8 @@ Go to the Card.jsx file, find the required Card type and change it, for example 
 Important! Change something only inside the wrapper component! Also, you cannot remove the id attribute, it will break the carousel.
 
 Now let's create a test data array that will display the card component and pass this array to the carousel.
-## illustration about passing elements
-##Passing elements image
+##illustration about passing elements
+## Passing elements image
 
 We pass the array of our data to the elements parameter, but unfortunately nothing will work for now, we need to take a little ride in the carousel ...
 
