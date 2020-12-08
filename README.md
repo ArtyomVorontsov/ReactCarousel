@@ -17,9 +17,9 @@ To start project on localhost:8080 you need to type npm start in terminal, to bu
 3. Run npm install to get all necessary node pakages.
 <img width="500" src="./readmeImages/steps/step3.png">
 
-4. Component sandbox will be in ./ReactCarousel/src/App.jsx
+4. Component sandbox will be in **./ReactCarousel/src/App.jsx**, run **npm start** to try carousel on **localhost:8080**
 <img width="500" src="./readmeImages/steps/step4.png">
->Try to change component properties to see all carousel capabilities.
+> Try to change component properties to see all carousel capabilities.
 
 ## Type of cards:
 Carousel have a cards which is entity which will be contain your HTML inside, you can create your own card or use predefined types of cards.
@@ -52,11 +52,12 @@ You can display or hide carousel buttons.
 You can choose type of card or pass your custom card component.
 
 - elements={ elementsRealPhotos / elements / Your API data }
+> {elementsRealPhotos} and {elements} this is test api from **"./CarouselBundle/FakeAPI/FakeAPI"** 
 You can choose API source for carousel, carousel component will map through all API data and render all Cards.
 
 **Properties only for custom card component**
 - cardWidth={window.innerWidth}
->If you use custom card component you should pass your custom card wrapper width to carousel component.
+> If you use custom card component you should pass your custom card wrapper width to carousel component.
 
 ## Work with predefined components:
 
