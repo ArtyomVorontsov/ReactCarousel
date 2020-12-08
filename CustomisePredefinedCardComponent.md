@@ -6,30 +6,43 @@ To start let’s clone carousel from GitHub repo.
 
 <img width="500" src="./readmeImages/tutorial/cloning.png">
 
-Great! Now carousel appear within our project folder, we can enter inside folder ReactCarousel and extract CarouselBundle to our components folder, within CarouselBundle we have all necessary files for our carousel component. The remaining things we can delete because it contains files for carousel sandbox.
+Great! Now carousel appear within our project folder.
 
 <img width="500" src="./readmeImages/tutorial/afterCloning.png">
-<img width="500" src="./readmeImages/tutorial/CarouselComponent.png">
 
-
-
+We can enter inside folder ReactCarousel and extract CarouselBundle to our components folder, within CarouselBundle we have all necessary files for our carousel component. The remaining things we can delete because it contains files for carousel sandbox.
 Now we can use <Carousel/> component.
+
+<img width="500" src="./readmeImages/tutorial/CarouselComponent.png">
 
 In our case we insert carousel component directly to the homepage of this site.
 
-Choosing the Card type and passing additional parameters to attributes.
+#### Choosing the Card type and passing additional parameters to attributes.
 
-For our purpose, an average PhotoCard 600px wide is fine, so we will choose it. We pass all the parameters which we need to the attributes and import the test data into the component, lets try to run it.
+For our purpose, an average PhotoCard 600px wide is fine, so we will choose it. We pass all the parameters which we need to the attributes and import the test data into the component.
 
-Component work but how we can see we have a large whitespace from above and from below, this is because component by default has a height 100vh, but we can change it in Carousel.module.scss by changing in carouselWrapper min-height property, or we can use wrapper and limit height like this:
+<img width="500" src="./readmeImages/tutorial/addingTestAttributes.png">
 
-##Scss file photo
+lets try to run it.
+
+<img width="500" src="./readmeImages/tutorial/firstFailedLaunch.png">
+
+Component work but how we can see we have a large whitespace from above and from below, this is because component by default has a height 100vh, but we can change it in Carousel.module.scss by changing in carouselWrapper min-height property:
+
+<img width="500" src="./readmeImages/tutorial/changeComponentHeigth.png">
+
+or we can use wrapper and limit height like this:
+
+<img width="500" src="./readmeImages/tutorial/wrapperAdded.png">
+<img width="500" src="./readmeImages/tutorial/wrapperCss.png">
 
 In this case, we will use the wrapper, but changing the height via Carousel.module.scss is also a good option. 
 
 Now our component works correctly, but it doesn't show exactly what we need, let's fix it.
 
-## Card customisation.
+<img width="500" src="./readmeImages/tutorial/firstLaunch.png">
+
+#### Card customisation.
 
 Our card component currently has default styles and html, but we can change that.
 
