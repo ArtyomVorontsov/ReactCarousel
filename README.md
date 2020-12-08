@@ -125,7 +125,13 @@ Reference for data structure you can find in:
 ```
 ./CarouselBundle/FakeAPI/FakeAPI.js
 ```
-5) Next step will be connect your data for component with component itself. You should go inside carousel component and add to Card your props, after that your carousel should work correctly.
+5) Next step will be connect your data for component with component itself. You should go inside carousel component and add to Card your props, for example like here with < PhotoCard /> tag.
+
+<img width="500" src="./readmeImages/tutorial/attributesToCard.png">
+
+After that your carousel should work correctly.
+
+
 
 ## Carousel support navigation with:
 - Buttons
