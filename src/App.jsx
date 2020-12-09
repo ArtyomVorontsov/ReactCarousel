@@ -15,7 +15,7 @@ const App = (props) => {
     return (
         <div className={classes.app}>
             <Carousel 
-            isInfinite={false}
+            isInfinite={true}
             paginatorOn={true}
             buttonsOn={true}
             Card={"PhotoCard"}

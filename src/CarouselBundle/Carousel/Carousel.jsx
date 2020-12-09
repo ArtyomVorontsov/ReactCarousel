@@ -12,6 +12,7 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
     const [carouselCardWidth, setCarouselCardWidth] = useState(cardWidth);
     const [cards, setCards] = useState([]);
     const [isFirstStart, setFirstStart] = useState(true);
+    
     let isFakeElements = false
 
     if (elements.length < 10 && isInfinite) {
@@ -21,8 +22,6 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
 
     const cardsSetup = () => {
         let newCards = elements.map((element, index) => {
-            console.log("isMapping")
-
             switch (Card) {
                 case "PhotoCard":
                     return <PhotoCard meta={index} id={index} key={index} picture={element.picture} />
@@ -78,11 +77,8 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
 
 
 
-    console.log("rerender")
-
 
     //Infinite mode next/prev card handlers 
-
     const setPrevCard = (step) => {
 
         let newCardPositions = [];
@@ -204,7 +200,6 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
 
 
     //Not infinite mode next/prev card handlers 
-
     let setNextCardNotInfinite = (step) => {
         let startingValue = cardPositions[cardPositions.length - 3]
         let buttonNext = document.getElementById("buttonNext");
@@ -318,8 +313,7 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
 
 
 
-    //Handlers
-
+    
     const keyHandler = (e) => {
         if (e.keyCode === 39) {
             isInfinite ? setNextCard(1) : setNextCardNotInfinite(1)

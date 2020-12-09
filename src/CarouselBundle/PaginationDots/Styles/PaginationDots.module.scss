@@ -11,27 +11,31 @@
     height: 20px;
 }
 
+.paginatorDot{
+    width: 10px;
+    height: 10px;
+    //Basic dot color
+    background-color: rgb(189, 157, 219);
+    border-radius: 50%;
+}
+
 .paginatorDotWrapper{
     @include flexAlign(row, center, center);
     width: 20px;
     height: 20px;
     &:hover{
         .paginatorDot{
+            //Color when you hover
             background-color: rgb(172, 120, 221);
         }
     }
 }
 
-.paginatorDot{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(189, 157, 219);
-    border-radius: 50%;
-}
 
 .paginatorDotSelected{
     width: 10px;
     height: 10px;
+    //Color when card selected 
     background-color: rgb(163, 110, 212);
     border-radius: 50%;
 }

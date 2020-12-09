@@ -66,18 +66,7 @@ export const PaginationDots = ({ isFakeElements, elements, currentCard, setPrevC
         } 
     }
 
-    // if (isFakeElements) {
-    //     if (currentCard < elements.length / 3) {    
-    //         paginatorDots = [...paginatorDots.slice(0, (elements.length / 3))]
-    //     } else if (currentCard < (elements.length / 3)*2){
-    //         paginatorDots = [...paginatorDots.slice((elements.length / 3), ((elements.length / 3)*2)) ]
-    //     } else if (currentCard < (elements.length / 3)*3){
-    //         paginatorDots = [...paginatorDots.slice(((elements.length / 3)*2), elements.length)]
-    //     }
-    // }
-
-
-
+   
     return (
         <div className={classes.paginator}>
             {paginatorDots}

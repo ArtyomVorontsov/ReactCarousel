@@ -16,6 +16,13 @@
   height: 20px;
 }
 
+.paginatorDot {
+  width: 10px;
+  height: 10px;
+  background-color: #bd9ddb;
+  border-radius: 50%;
+}
+
 .paginatorDotWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,13 +43,6 @@
 
 .paginatorDotWrapper:hover .paginatorDot {
   background-color: #ac78dd;
-}
-
-.paginatorDot {
-  width: 10px;
-  height: 10px;
-  background-color: #bd9ddb;
-  border-radius: 50%;
 }
 
 .paginatorDotSelected {
