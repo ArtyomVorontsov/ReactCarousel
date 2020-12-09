@@ -9,6 +9,9 @@ To try carousel component you need to have installed nodejs and download code fr
 To start project on localhost:8080 you need to type **npm start** in terminal, to build use **npm run build**.
 
 1. Get code from GitHub repo.
+
+> git clone https://github.com/ArtyomVorontsov/ReactCarousel.git
+
 <img width="500" src="./readmeImages/steps/step1.png">
 
 2. Code will be downloaded to your machine.
