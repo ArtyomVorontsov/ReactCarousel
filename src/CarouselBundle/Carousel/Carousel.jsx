@@ -71,7 +71,7 @@ export const Carousel = ({ elements = null, Card = null, cardWidth = 480, isInfi
 
             default:
                 setCarouselCardWidth(cardWidth)
-                return 480
+                return cardWidth
         }
     }
 
