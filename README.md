@@ -109,17 +109,17 @@ Every card component must have a card wrapper div with id attribute like this:
 
 2) After your component was created you can pass it to carousel, like this:
 ```
-<Carousell  Card={<YourComponent/>}  />
+<Carousell  Card={YourComponent}  />
 ```
 3) Don’t forget add a cardWidth attribute, like here:
 ```
-<Carousell cardWidth={500}  Card={<YourComponent/>}  />
+<Carousell cardWidth={500}  Card={YourComponent}  />
 ```
 > CardWidth attribute should contain your card wrapper width
 
 4) Then you should add data for your card: 
 ```
-<Carousell cardWidth={500}  Card={<YourComponent/>} elements={YourData}  />
+<Carousell cardWidth={500}  Card={YourComponent} elements={YourData}  />
 ```
 Reference for data structure you can find in:  
 ```
